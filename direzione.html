@@ -138,5 +138,11 @@ document.addEventListener('click',function(e){if(!e.target.closest('.langsel'))c
 document.querySelectorAll('.lang-menu button').forEach(function(b){b.addEventListener('click',function(){apply(b.getAttribute('data-l'));close()})});
 apply(pick());})();
 </script>
+<script>
+(function(){function fit(){document.querySelectorAll('.wm').forEach(function(w){var n=w.querySelector('b'),sm=w.querySelector('small');if(!n||!sm)return;
+sm.style.letterSpacing='0px';sm.style.marginRight='0px';var nb=n.getBoundingClientRect().width-parseFloat(getComputedStyle(n).letterSpacing||0);
+var sw=sm.getBoundingClientRect().width,k=sm.textContent.length-1;if(k>0){var ls=(nb-sw)/k;sm.style.letterSpacing=ls+'px';sm.style.marginRight=(-ls)+'px'}})}
+fit();if(document.fonts&&document.fonts.ready)document.fonts.ready.then(fit);addEventListener('resize',fit)})();
+</script>
 </body>
 </html>
