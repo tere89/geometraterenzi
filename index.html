@@ -322,9 +322,13 @@ footer .wrap{padding-block:32px;display:flex;justify-content:space-between;align
 .fdata{display:grid;gap:6px;justify-items:end;text-align:right}.fdata>span{display:flex;flex-wrap:wrap;align-items:center;justify-content:flex-end;gap:0 .4em;line-height:1.5}.fdata a{color:inherit}
 @media (max-width:860px){.fdata{text-align:left;justify-items:start}.fdata>span{justify-content:flex-start}}
 .mobile-call{display:none}
+.hbtn .hs{display:none}
+@media (max-width:600px){.hbtn .hl{display:none}.hbtn .hs{display:inline}.hbtn{font-size:.8rem;padding:9px 11px}header .wrap{gap:10px}}
+@media (max-width:480px){.wm{font-size:.66rem;letter-spacing:.14em}.wm small{font-size:.5rem;letter-spacing:.1em}.brand{gap:8px}.brand .mark{width:30px}}
+@media (max-width:350px){.hbtn{font-size:.72rem;padding:8px 8px}.wm{font-size:.6rem;letter-spacing:.1em}}
 
 @media (max-width:860px){
-  nav,.hbtn{display:none}
+  nav{display:none}
   .hero{padding-block:44px 24px}
   .hero-top,.head,.area,.ccard{grid-template-columns:1fr;gap:20px}
   .svc,.obl,.nums,.causes{grid-template-columns:1fr}
@@ -345,7 +349,7 @@ footer .wrap{padding-block:32px;display:flex;justify-content:space-between;align
 nav a{white-space:nowrap}
 .brand{flex:none}
 @media (min-width:861px) and (max-width:1060px){nav{display:none}}
-@media (min-width:1061px) and (max-width:1240px){.hbtn{display:none}}
+@media (min-width:1061px) and (max-width:1240px){nav{gap:20px}header .wrap{gap:16px}}
 @media (min-width:601px) and (max-width:860px){
   .svc,.obl{grid-template-columns:repeat(2,minmax(0,1fr))}
   .nums,.causes,.facts{grid-template-columns:repeat(3,minmax(0,1fr))}
@@ -415,7 +419,7 @@ nav a{white-space:nowrap}
       <a href="#faq">Domande</a>
       <a href="#contatti">Contatti</a>
     </nav>
-    <a class="hbtn" href="#contatti">Richiedi un preventivo</a>
+    <a class="hbtn" href="#contatti"><span class="hl">Richiedi un preventivo</span><span class="hs">Preventivo</span></a>
   </div>
 </header>
 
