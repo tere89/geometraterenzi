@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+Disallow: /infortuni.html
+
+Sitemap: https://www.geometraterenzi.it/sitemap.xml
