@@ -453,6 +453,18 @@ main#top .go .btn{width:100%;text-align:center}
 [dir=rtl] .causes li{padding-left:0;padding-right:20px}[dir=rtl] .causes li::before{left:auto;right:0}
 [dir=rtl] .inf-hero,[dir=rtl] main{text-align:right}[dir=rtl] em{font-style:normal}
 @media (max-width:600px){.langwrap{padding-top:14px}main#top[dir=rtl] .causes li{padding-left:0;padding-right:18px}}
+
+@media (max-width:860px){
+ section{padding-block:24px!important}
+ .nums>div{padding-block:10px!important}
+ .head{margin-top:26px!important;margin-bottom:14px!important}
+ .causes{gap:12px!important}.causes article{padding:16px!important}
+ .causes .ev{position:relative;cursor:pointer;margin-top:12px!important;padding:10px 44px 10px 0;border-top:1px solid rgba(255,255,255,.15);-webkit-tap-highlight-color:transparent}
+ .causes .ev::after{content:"+";position:absolute;inset-inline-end:0;top:50%;transform:translateY(-50%);width:30px;height:30px;border-radius:50%;background:var(--accent);color:var(--navy);font:700 1.25rem/30px var(--body);text-align:center}
+ .causes article.open .ev::after{content:"\2212"}
+ .causes article:not(.open) ul{display:none!important}
+ .why{gap:14px!important}
+}
 </style>
 </head>
 <body>
@@ -593,5 +605,5 @@ document.addEventListener('click',function(e){if(!e.target.closest('.langsel'))c
 document.querySelectorAll('.lang-menu button').forEach(function(b){b.addEventListener('click',function(){apply(b.getAttribute('data-l'));close()})});
 apply(pick());})();
 </script>
-</body>
+<script>(function(){document.querySelectorAll(".causes .ev").forEach(function(e){e.setAttribute("role","button");e.setAttribute("tabindex","0");function t(){var a=e.closest("article");a.classList.toggle("open");e.setAttribute("aria-expanded",a.classList.contains("open"))}e.addEventListener("click",t);e.addEventListener("keydown",function(k){if(k.key==="Enter"||k.key===" "){k.preventDefault();t()}})})})();</script></body>
 </html>
