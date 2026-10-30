@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
-<title>Prevenzione e sicurezza cantiere | Geom. Paolo Terenzi</title>
+<title>Sicurezza in cantiere | Geom. Paolo Terenzi</title>
 <meta name="description" content="Sicurezza in cantiere: cosa deve fare il committente, cosa serve all'impresa per entrare in cantiere e le regole per lavorare sicuri. Geom. Paolo Terenzi, coordinatore della sicurezza.">
 <meta name="robots" content="noindex">
 <style>
@@ -58,6 +58,37 @@ footer .wrap{padding-block:26px;display:flex;justify-content:space-between;align
 .fbrand{display:flex;align-items:center;gap:12px;color:#fff;font-weight:600}
 .fbrand img{width:34px;height:auto}
 footer a{color:#fff}
+.langsel{position:relative;display:inline-block}
+.lang-btn{display:inline-flex;align-items:center;gap:10px;font:600 .95rem var(--body);color:#fff;background:var(--navy);border:0;border-radius:999px;padding:10px 18px;cursor:pointer}
+.lang-btn .car{font-size:.8rem;opacity:.8}
+.lang-menu{position:absolute;z-index:20;top:calc(100% + 6px);inset-inline-start:0;min-width:240px;max-height:70vh;overflow:auto;margin:0;padding:6px;list-style:none;background:#fff;border:1px solid var(--rule);box-shadow:0 12px 32px rgba(14,42,71,.18);border-radius:10px}
+.lang-menu button{display:block;width:100%;text-align:start;font:500 1rem var(--body);color:var(--navy);background:none;border:0;border-radius:6px;padding:11px 14px;cursor:pointer}
+.lang-menu button:hover,.lang-menu button.on{background:#EEF2F5}.lang-menu button.on{font-weight:700}
+.langrow{margin-bottom:18px}
+.langsel{position:relative;display:inline-block}
+[dir=rtl] .hero,[dir=rtl] .chooser,[dir=rtl] .choice{text-align:right}
+@media (max-width:480px){.hero{padding-top:18px}h1{margin:10px 0 8px}.chooser{gap:10px;margin-top:18px}.choice{padding:14px 16px;flex-direction:row;flex-wrap:wrap;align-items:center;column-gap:12px;row-gap:2px}.choice svg{width:26px;height:26px}.choice span{flex-basis:100%;padding-inline-start:48px}}
+
+.choice{position:relative;border:1.5px solid #C9D3DD;border-inline-start:5px solid var(--accent);box-shadow:0 2px 0 #C9D3DD,0 6px 14px rgba(14,42,71,.08);padding-inline-end:52px!important;transition:transform .08s,box-shadow .08s}
+.choice::after{content:"";position:absolute;inset-inline-end:14px;top:50%;width:30px;height:30px;margin-top:-15px;border-radius:50%;background:var(--navy) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath d='M9 6l6 6-6 6' fill='none' stroke='%23fff' stroke-width='2.6' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E") center/18px no-repeat}
+[dir=rtl] .choice::after{transform:scaleX(-1)}
+.choice:active{transform:translateY(2px);box-shadow:0 0 0 #C9D3DD,0 2px 6px rgba(14,42,71,.08)}
+.choice svg{background:#EEF2F5;border-radius:50%;padding:5px;box-sizing:content-box}
+
+.lang-btn{background:#fff!important;color:var(--navy)!important;border:1.5px solid #C9D3DD!important;border-radius:8px!important;padding:6px 10px!important;gap:7px!important;font:600 .88rem var(--body,var(--font,Arial))!important;box-shadow:0 2px 0 #C9D3DD}
+.lang-btn .cur .fl,.lang-menu .fl{font-size:1.05em;letter-spacing:0;white-space:nowrap;flex:none}
+.lang-btn .car{display:inline-flex;opacity:1!important}
+.lang-btn .car svg{width:12px;height:12px}
+.lang-menu button{display:flex!important;align-items:center;gap:8px}
+
+.mobile-call{display:none}
+.mobile-call a.s112{flex:0 0 auto;background:#B3261E!important;color:#fff!important;border:0!important;padding:13px 16px}
+@media (max-width:860px){
+ .mobile-call{display:flex;position:fixed;left:0;right:0;bottom:0;z-index:6;gap:8px;background:#fff;padding:10px max(16px,env(safe-area-inset-right,0px)) calc(10px + env(safe-area-inset-bottom,0px)) max(16px,env(safe-area-inset-left,0px));border-top:1px solid var(--rule)}
+ .mobile-call a{flex:1;text-align:center;padding:13px;font-weight:600;text-decoration:none;background:var(--navy);color:#fff;border-radius:2px}
+ .mobile-call a+a{background:#fff;color:var(--navy);border:1.5px solid var(--navy)}
+ footer{padding-bottom:76px}
+}
 </style>
 </head>
 <body>
@@ -65,50 +96,51 @@ footer a{color:#fff}
 <header>
   <div class="wrap">
     <a class="brand" href="https://www.geometraterenzi.it/" aria-label="Geometra Paolo Terenzi, torna al sito"><svg width="40" height="33" viewBox="0 0 200 166" aria-hidden="true" style="flex:none"><path fill="#0E2A47" fill-rule="evenodd" d="M4 56 L99 4 L196 56 V163.5 H4 Z M15 62 L99 15.5 L185 62 V152.5 H15 Z M24 68 L98 28 L98 41 L24 81 Z M24 88 L98 48 L98 61 L24 101 Z M24 108 L98 68 L98 81 L24 121 Z M24 128 L98 88 L98 101 L24 141 Z M33.3 143 L98 108 L98 121 L57.3 143 Z M70.3 143 L98 128 L98 141 L94.4 143 Z M104 29 L117.6 36.3 V143 H104 Z M123 39.3 L137 46.8 V143 H123 Z M142 49.5 L156 57.1 V143 H142 Z M161.5 60 L174 66.8 V143 H161.5 Z"/></svg><span><b>Geometra Paolo Terenzi</b><small>Coordinamento sicurezza cantieri</small></span></a>
-    <a class="back" href="https://www.geometraterenzi.it/">Vai al sito →</a>
+    <a class="back" href="https://www.geometraterenzi.it/" data-k="go">Vai al sito →</a>
   </div>
 </header>
 
 <main class="wrap">
-  <div class="hero">
-    <div class="eyebrow">Prevenzione e sicurezza cantiere</div>
-    <h1>Chi sei?</h1>
-    <p class="lead">Scegli la tua pagina: trovi quello che devi fare, i documenti che servono e le regole per lavorare sicuri.</p>
+  <div class="hero"><div class="langrow"><div class="langsel"><button type="button" class="lang-btn" aria-haspopup="listbox" aria-expanded="false" aria-label="Lingua / Language"><span class="cur">🇮🇹 Italiano</span><span class="car" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M6 9l6 6 6-6" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg></span></button><ul class="lang-menu" role="listbox" hidden><li><button type="button" role="option" data-l="it" lang="it"><span class="fl" aria-hidden="true">🇮🇹 </span>Italiano</button></li><li><button type="button" role="option" data-l="sq" lang="sq"><span class="fl" aria-hidden="true">🇦🇱 </span>Shqip</button></li><li><button type="button" role="option" data-l="ro" lang="ro"><span class="fl" aria-hidden="true">🇷🇴 </span>Română</button></li><li><button type="button" role="option" data-l="ar" lang="ar"><span class="fl" aria-hidden="true">🇲🇦 </span>العربية</button></li><li><button type="button" role="option" data-l="mk" lang="mk"><span class="fl" aria-hidden="true">🇲🇰 </span>Македонски</button></li><li><button type="button" role="option" data-l="sh" lang="sh"><span class="fl" aria-hidden="true">🇷🇸🇭🇷🇧🇦 </span>Srpski · Hrvatski · Bosanski</button></li><li><button type="button" role="option" data-l="ur" lang="ur"><span class="fl" aria-hidden="true">🇵🇰 </span>اردو</button></li><li><button type="button" role="option" data-l="bn" lang="bn"><span class="fl" aria-hidden="true">🇧🇩 </span>বাংলা</button></li><li><button type="button" role="option" data-l="uk" lang="uk"><span class="fl" aria-hidden="true">🇺🇦 </span>Українська</button></li><li><button type="button" role="option" data-l="en" lang="en"><span class="fl" aria-hidden="true">🇬🇧 </span>English</button></li><li><button type="button" role="option" data-l="fr" lang="fr"><span class="fl" aria-hidden="true">🇫🇷 </span>Français</button></li></ul></div></div>
+    <div class="eyebrow" data-k="eb">Sicurezza in cantiere</div>
+    <h1 data-k="h1">Seleziona il tuo ruolo</h1>
+    <p class="lead" data-k="lead">Committente, impresa o direzione lavori: le regole per lavorare sicuri, in due minuti.</p>
     <div class="privacy-bar" role="note">
       <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round" aria-hidden="true"><path d="M12 2.8l8 3v6c0 5-3.4 8.2-8 9.4-4.6-1.2-8-4.4-8-9.4v-6z"/></svg>
-      <span>Questa pagina registra in forma anonima la data, la pagina scelta e, solo se lo consenti, la via da cui la apri. Nessun nome, nessun dato personale. <a href="#privacy">Informativa</a></span>
+      <span><span data-k="priv">Registriamo in modo anonimo solo data, pagina scelta e zona approssimativa.</span> <a href="#privacy" data-k="privl">Informativa</a></span>
     </div>
   </div>
 
   <nav class="chooser" aria-label="Scegli la tua pagina">
     <a class="choice" href="https://www.geometraterenzi.it/committente.html" data-sez="committente">
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round" aria-hidden="true"><path d="M3 11l9-7 9 7"/><path d="M5 10v10h14V10"/><path d="M10 20v-6h4v6"/></svg>
-      <b>Committente</b><span>Proprietario, condominio, ente: cosa devo fare io</span>
+      <b data-k="b1">Committente</b><span data-k="s1">Proprietario, condominio, ente: cosa devi fare</span>
     </a>
     <a class="choice" href="https://www.geometraterenzi.it/imprese.html" data-sez="imprese">
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round" aria-hidden="true"><path d="M5 16v-2a7 7 0 0 1 14 0v2"/><path d="M10 7.3V12M14 7.3V12"/><path d="M2.5 16h19v2.5h-19z"/></svg>
-      <b>Imprese</b><span>Documenti e regole per entrare in cantiere</span>
+      <b data-k="b2">Impresa e operai</b><span data-k="s2">Documenti e regole per entrare</span>
     </a>
     <a class="choice" href="https://www.geometraterenzi.it/direzione.html" data-sez="direttore-lavori">
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round" stroke-linecap="round" aria-hidden="true"><rect x="5" y="4" width="14" height="17" rx="1.5"/><path d="M9 4V2.8h6V4"/><path d="M8.8 12.5l2.2 2.2 4.2-4.4"/></svg>
-      <b>Direttore lavori</b><span>Come coordinarsi con il CSE in cantiere</span>
+      <b data-k="b3">Direttore lavori</b><span data-k="s3">Coordinamento con il CSE</span>
     </a>
     <a class="choice" href="https://www.geometraterenzi.it/infortuni.html" data-sez="infortuni">
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round" stroke-linecap="round" aria-hidden="true"><path d="M12 2.8l8 3v6c0 5-3.4 8.2-8 9.4-4.6-1.2-8-4.4-8-9.4v-6z"/><path d="M8.6 12l2.4 2.4 4.4-4.6"/></svg>
-      <b>Morti e infortuni in edilizia</b><span>I dati e le regole per evitarli</span>
+      <b data-k="b4">Morti e infortuni in edilizia</b><span data-k="s4">Come succedono e come si evitano</span>
     </a>
   </nav>
 
   <details class="priv" id="privacy">
-    <summary>Informativa sul registro delle visite</summary>
-    <p><b>Titolare:</b> Geom. Paolo Terenzi, Via Primule 33, Cattolica (RN), info@geometraterenzi.it.</p>
-    <p><b>Cosa registriamo:</b> data e ora della visita, pagina scelta, tipo di dispositivo e posizione. La posizione è la <b>via</b> solo se acconsenti alla richiesta del telefono; altrimenti è il comune approssimativo ricavato dalla connessione. Non registriamo nomi, numeri di telefono né coordinate esatte.</p>
+    <summary data-k="sum">Informativa sul registro delle visite</summary>
+    <p><b>Titolare:</b> Geom. Paolo Terenzi, Via Primule 33, Cattolica (RN), <span data-c="mail"></span>.</p>
+    <p><b>Cosa registriamo:</b> data e ora della visita, pagina scelta, tipo di dispositivo e comune approssimativo ricavato dalla connessione. Non registriamo nomi, numeri di telefono né la posizione GPS.</p>
     <p><b>Perché:</b> statistiche sull'uso della pagina e collegamento delle consultazioni con le zone dei cantieri seguiti, per migliorare l'informazione sulla sicurezza. Il registro non viene usato per controllare presenze, orari o spostamenti dei lavoratori.</p>
-    <p><b>Base giuridica:</b> il tuo consenso per la posizione tramite GPS (puoi negarlo: la pagina funziona lo stesso); il legittimo interesse del titolare per le statistiche anonime.</p>
-    <p><b>Servizi usati:</b> Fogli Google (Google) per conservare il registro; OpenStreetMap Nominatim per trasformare la posizione nel nome della via; ipapi.co per ricavare il comune approssimativo.</p>
-    <p><b>Conservazione:</b> 24 mesi, poi i dati vengono cancellati. Puoi chiedere informazioni o esercitare i tuoi diritti scrivendo a info@geometraterenzi.it. Hai diritto di proporre reclamo al Garante per la protezione dei dati personali.</p>
+    <p><b>Base giuridica:</b> il legittimo interesse del titolare per statistiche anonime sull'uso della pagina.</p>
+    <p><b>Servizi usati:</b> Fogli Google (Google) per conservare il registro; ipapi.co per ricavare il comune approssimativo.</p>
+    <p><b>Conservazione:</b> 24 mesi, poi i dati vengono cancellati. Puoi chiedere informazioni o esercitare i tuoi diritti scrivendo a <span data-c="mail"></span>. Hai diritto di proporre reclamo al Garante per la protezione dei dati personali.</p>
   </details>
 </main>
+<nav class="mobile-call" aria-label="Contatto rapido"><a class="s112" href="tel:112">📞 112</a><a href="#" data-h="tel" data-k="call">Chiama</a><a href="#" data-h="mail" data-k="mail">Email</a></nav>
 
 <footer>
   <div class="wrap">
@@ -184,20 +216,8 @@ footer a{color:#fff}
     }).catch(function(){ pos.via = "(via non ricavata)"; }).then(svuota);
   }
 
-  // Posizione: chiede il permesso al telefono; se negato o non disponibile, comune approssimativo
-  var fatto = false;
-  function una(fn){ return function(){ if (fatto) return; fatto = true; fn.apply(null, arguments); }; }
-  var fallback = una(daIP);
-  if (navigator.geolocation && window.isSecureContext) {
-    try {
-      navigator.geolocation.getCurrentPosition(
-        una(function(p){ daGPS(p.coords.latitude, p.coords.longitude); }),
-        function(){ fallback(); },
-        { enableHighAccuracy: true, timeout: 15000, maximumAge: 60000 }
-      );
-      setTimeout(fallback, 20000);
-    } catch(e){ fallback(); }
-  } else { fallback(); }
+  // Solo comune approssimativo dalla connessione: nessuna richiesta di posizione al telefono
+  daIP();
 
   var da = ""; try { da = new URLSearchParams(location.search).get("da") || ""; } catch(e){}
   if (da === "bv") da = "biglietto";
@@ -219,6 +239,22 @@ footer a{color:#fff}
     });
   });
 })();
+</script>
+<script>
+(function(){var K={"tel":"NDQ0NzE1NzkzMzkzKw==","mail":"dGkuaXpuZXJldGFydGVtb2VnQG9mbmk="};function d(k){try{return atob(K[k]).split('').reverse().join('')}catch(e){return''}}
+document.querySelectorAll('[data-c]').forEach(function(el){el.textContent=d(el.getAttribute('data-c'))});document.querySelectorAll('[data-h]').forEach(function(a){var t=a.getAttribute('data-h');a.href=t==='tel'?'tel:'+d('tel'):t==='mail'?'mailto:'+d('mail'):a.href});})();
+(function(){var D={"it": {"go": "Vai al sito →", "eb": "Sicurezza in cantiere", "h1": "Seleziona il tuo ruolo", "lead": "Committente, impresa o direzione lavori: le regole per lavorare sicuri, in due minuti.", "priv": "Registriamo in modo anonimo solo data, pagina scelta e zona approssimativa.", "privl": "Informativa", "b1": "Committente", "s1": "Proprietario, condominio, ente: cosa devi fare", "b2": "Impresa e operai", "s2": "Documenti e regole per entrare", "b3": "Direttore lavori", "s3": "Coordinamento con il CSE", "b4": "Morti e infortuni in edilizia", "s4": "Come succedono e come si evitano", "sum": "Informativa sul registro delle visite", "call": "Chiama", "mail": "Email"}, "sq": {"go": "Shko te faqja →", "eb": "Siguria në kantier", "h1": "Zgjidh rolin tënd", "lead": "Porositës, firmë ose drejtim punimesh: rregullat për të punuar të sigurt, në dy minuta.", "priv": "Regjistrojmë në mënyrë anonime vetëm datën, faqen e zgjedhur dhe zonën e përafërt.", "privl": "Informacion", "b1": "Porositësi", "s1": "Pronar, pallat, ent: çfarë duhet të bësh", "b2": "Firma dhe punëtorët", "s2": "Dokumentet dhe rregullat për të hyrë", "b3": "Drejtori i punimeve", "s3": "Koordinimi me CSE-në", "b4": "Vdekje dhe aksidente në ndërtim", "s4": "Si ndodhin dhe si shmangen", "sum": "Informacion mbi regjistrin e vizitave (në italisht)", "call": "Telefono", "mail": "Email"}, "ro": {"go": "Mergi la site →", "eb": "Securitate pe șantier", "h1": "Alege rolul tău", "lead": "Beneficiar, firmă sau dirigenție de șantier: regulile pentru a lucra în siguranță, în două minute.", "priv": "Înregistrăm anonim doar data, pagina aleasă și zona aproximativă.", "privl": "Informare", "b1": "Beneficiar", "s1": "Proprietar, condominiu, instituție: ce trebuie să faci", "b2": "Firmă și muncitori", "s2": "Documente și reguli pentru a intra", "b3": "Diriginte de șantier", "s3": "Coordonarea cu CSE", "b4": "Decese și accidente în construcții", "s4": "Cum se întâmplă și cum se evită", "sum": "Informare privind registrul vizitelor (în italiană)", "call": "Sună", "mail": "E-mail"}, "ar": {"go": "إلى الموقع ←", "eb": "السلامة في موقع البناء", "h1": "اختر دورك", "lead": "صاحب العمل أو الشركة أو مدير الأعمال: قواعد العمل بأمان، في دقيقتين.", "priv": "نسجّل بشكل مجهول فقط التاريخ والصفحة المختارة والمنطقة التقريبية.", "privl": "إشعار الخصوصية", "b1": "صاحب العمل", "s1": "مالك، عمارة، جهة: ما عليك فعله", "b2": "الشركة والعمال", "s2": "الوثائق وقواعد الدخول", "b3": "مدير الأعمال", "s3": "التنسيق مع منسق السلامة CSE", "b4": "الوفيات والحوادث في البناء", "s4": "كيف تحدث وكيف نتجنبها", "sum": "إشعار سجل الزيارات (بالإيطالية)", "call": "اتصال", "mail": "بريد إلكتروني"}, "mk": {"go": "Оди на сајтот →", "eb": "Безбедност на градилиште", "h1": "Избери ја твојата улога", "lead": "Инвеститор, фирма или надзор: правилата за безбедна работа, за две минути.", "priv": "Анонимно ги бележиме само датумот, избраната страница и приближната зона.", "privl": "Информација", "b1": "Инвеститор", "s1": "Сопственик, зграда, институција: што треба да направиш", "b2": "Фирма и работници", "s2": "Документи и правила за влез", "b3": "Надзорен инженер", "s3": "Координација со CSE", "b4": "Смртни случаи и несреќи во градежништвото", "s4": "Како се случуваат и како се избегнуваат", "sum": "Информација за регистарот на посети (на италијански)", "call": "Јави се", "mail": "Е-пошта"}, "sh": {"go": "Idi na sajt →", "eb": "Sigurnost na gradilištu", "h1": "Izaberi svoju ulogu", "lead": "Investitor, firma ili nadzor: pravila za siguran rad, za dvije minute.", "priv": "Anonimno bilježimo samo datum, izabranu stranicu i približnu zonu.", "privl": "Obavještenje", "b1": "Investitor", "s1": "Vlasnik, zgrada, ustanova: šta trebaš uraditi", "b2": "Firma i radnici", "s2": "Dokumenti i pravila za ulazak", "b3": "Nadzorni inženjer", "s3": "Koordinacija sa CSE", "b4": "Smrti i nesreće u građevini", "s4": "Kako se dešavaju i kako ih izbjeći", "sum": "Obavještenje o registru posjeta (na italijanskom)", "call": "Pozovi", "mail": "Email"}, "ur": {"go": "ویب سائٹ پر جائیں ←", "eb": "سائٹ پر حفاظت", "h1": "اپنا کردار منتخب کریں", "lead": "مالک، کمپنی یا ڈائریکٹر آف ورکس: محفوظ کام کے اصول، دو منٹ میں۔", "priv": "ہم گمنام طور پر صرف تاریخ، منتخب صفحہ اور تقریبی علاقہ درج کرتے ہیں۔", "privl": "رازداری نوٹس", "b1": "مالک", "s1": "مالک مکان، عمارت، ادارہ: آپ کو کیا کرنا ہے", "b2": "کمپنی اور مزدور", "s2": "داخلے کے کاغذات اور اصول", "b3": "ڈائریکٹر آف ورکس", "s3": "CSE کے ساتھ رابطہ", "b4": "تعمیرات میں اموات اور حادثات", "s4": "کیسے ہوتے ہیں اور کیسے بچیں", "sum": "وزٹ رجسٹر کا نوٹس (اطالوی میں)", "call": "کال کریں", "mail": "ای میل"}, "bn": {"go": "ওয়েবসাইটে যান →", "eb": "নির্মাণস্থলে নিরাপত্তা", "h1": "আপনার ভূমিকা বেছে নিন", "lead": "মালিক, কোম্পানি বা কাজের পরিচালক: নিরাপদে কাজের নিয়ম, দুই মিনিটে।", "priv": "আমরা বেনামে শুধু তারিখ, বেছে নেওয়া পাতা ও আনুমানিক এলাকা রেকর্ড করি।", "privl": "গোপনীয়তা তথ্য", "b1": "মালিক", "s1": "বাড়ির মালিক, ভবন, প্রতিষ্ঠান: আপনার কী করতে হবে", "b2": "কোম্পানি ও শ্রমিক", "s2": "ঢোকার কাগজপত্র ও নিয়ম", "b3": "কাজের পরিচালক", "s3": "CSE-এর সাথে সমন্বয়", "b4": "নির্মাণে মৃত্যু ও দুর্ঘটনা", "s4": "কীভাবে ঘটে ও কীভাবে এড়ানো যায়", "sum": "ভিজিট রেজিস্টারের তথ্য (ইতালীয় ভাষায়)", "call": "কল করুন", "mail": "ইমেল"}, "uk": {"go": "На сайт →", "eb": "Безпека на будмайданчику", "h1": "Обери свою роль", "lead": "Замовник, фірма чи технагляд: правила безпечної роботи за дві хвилини.", "priv": "Ми анонімно фіксуємо лише дату, обрану сторінку та приблизний район.", "privl": "Повідомлення", "b1": "Замовник", "s1": "Власник, будинок, установа: що тобі робити", "b2": "Фірма і робітники", "s2": "Документи та правила входу", "b3": "Технагляд", "s3": "Координація з CSE", "b4": "Загибелі та нещасні випадки в будівництві", "s4": "Як стаються і як їм запобігти", "sum": "Повідомлення про реєстр відвідувань (італійською)", "call": "Подзвонити", "mail": "Email"}, "en": {"go": "Go to website →", "eb": "Site safety", "h1": "Select your role", "lead": "Client, contractor or works director: the rules for working safely, in two minutes.", "priv": "We record anonymously only the date, the page chosen and the approximate area.", "privl": "Privacy notice", "b1": "Client", "s1": "Owner, condominium, public body: what you must do", "b2": "Contractor and workers", "s2": "Documents and rules to enter", "b3": "Works director", "s3": "Coordination with the CSE", "b4": "Deaths and accidents in construction", "s4": "How they happen and how to avoid them", "sum": "Visit log notice (in Italian)", "call": "Call", "mail": "Email"}, "fr": {"go": "Aller au site →", "eb": "Sécurité sur le chantier", "h1": "Choisis ton rôle", "lead": "Maître d'ouvrage, entreprise ou maître d'œuvre : les règles pour travailler en sécurité, en deux minutes.", "priv": "Nous enregistrons de façon anonyme seulement la date, la page choisie et la zone approximative.", "privl": "Informations", "b1": "Maître d'ouvrage", "s1": "Propriétaire, copropriété, organisme : ce que tu dois faire", "b2": "Entreprise et ouvriers", "s2": "Documents et règles pour entrer", "b3": "Maître d'œuvre", "s3": "Coordination avec le CSE", "b4": "Morts et accidents dans le bâtiment", "s4": "Comment ils arrivent et comment les éviter", "sum": "Informations sur le registre des visites (en italien)", "call": "Appeler", "mail": "E-mail"}};
+var m=document.documentElement,btn=document.querySelector('.lang-btn'),menu=document.querySelector('.lang-menu'),cur=btn.querySelector('.cur');
+var AL={sr:'sh',hr:'sh',bs:'sh',me:'sh'};function pick(){var q=(location.search.match(/[?&]lang=([a-z]{2})/)||[])[1];if(q&&D[q])return q;var s;try{s=localStorage.getItem('inf-lang')}catch(e){}if(s&&D[s])return s;
+var n=(navigator.languages||[navigator.language||'it']);for(var i=0;i<n.length;i++){var c=(n[i]||'').slice(0,2).toLowerCase();c=AL[c]||c;if(D[c])return c}return 'it'}
+function apply(l){var d=D[l];document.querySelectorAll('[data-k]').forEach(function(e){var v=d[e.getAttribute('data-k')];if(v!=null)e.textContent=v});
+m.lang=l;m.setAttribute('dir',(l==='ar'||l==='ur')?'rtl':'ltr');document.querySelectorAll('.lang-menu button').forEach(function(b){var on=b.getAttribute('data-l')===l;b.classList.toggle('on',on);b.setAttribute('aria-selected',on);if(on)cur.textContent=b.textContent});
+try{localStorage.setItem('inf-lang',l)}catch(e){}}
+function close(){menu.hidden=true;btn.setAttribute('aria-expanded','false')}
+btn.addEventListener('click',function(e){e.stopPropagation();menu.hidden=!menu.hidden;btn.setAttribute('aria-expanded',String(!menu.hidden))});
+document.addEventListener('click',function(e){if(!e.target.closest('.langsel'))close()});document.addEventListener('keydown',function(e){if(e.key==='Escape')close()});
+document.querySelectorAll('.lang-menu button').forEach(function(b){b.addEventListener('click',function(){apply(b.getAttribute('data-l'));close()})});
+apply(pick());})();
 </script>
 </body>
 </html>
