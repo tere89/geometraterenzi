@@ -203,16 +203,19 @@ footer a{color:#fff}
   if (da === "bv") da = "biglietto";
   invia(da ? "apertura da " + da.slice(0, 20) : "apertura", (location.hash || "").replace("#", ""));
 
+  // Se si chiude la pagina prima di avere la posizione, invia comunque le righe in attesa
+  window.addEventListener("pagehide", function(){ if (!posPronta) svuota(); });
+
   // Le 4 pagine: registra la scelta, poi apre la pagina
   Array.prototype.slice.call(document.querySelectorAll(".choice")).forEach(function(a){
     a.addEventListener("click", function(ev){
       if (ev.metaKey || ev.ctrlKey || ev.shiftKey || ev.button) { invia("scelta", a.getAttribute("data-sez")); return; }
       ev.preventDefault();
       var href = a.getAttribute("href"), via = false;
-      function vai(){ if (via) return; via = true; location.href = href; }
+      function vai(){ if (via) return; via = true; if (!posPronta) svuota(); setTimeout(function(){ location.href = href; }, 300); }
       invia("scelta", a.getAttribute("data-sez"));
       if (posPronta) { setTimeout(vai, 250); }
-      else { var w = setInterval(function(){ if (posPronta) { clearInterval(w); setTimeout(vai, 250); } }, 100); setTimeout(vai, 2500); }
+      else { var w = setInterval(function(){ if (posPronta) { clearInterval(w); setTimeout(vai, 250); } }, 100); setTimeout(vai, 1500); }
     });
   });
 })();
