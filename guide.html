@@ -1,0 +1,159 @@
+<!doctype html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Guide alla sicurezza in cantiere per ruolo | Geom. Paolo Terenzi</title>
+<meta name="description" content="Guide pratiche alla sicurezza nei cantieri edili per committenti, imprese, dipendenti, preposti, lavoratori autonomi e direttori dei lavori. A cura del Geom. Paolo Terenzi, coordinatore per la sicurezza.">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://www.geometraterenzi.it/guide.html">
+<style>
+:root{
+  --paper:#F5F7F9; --white:#FFFFFF; --navy:#0E2A47; --ink:#14212E; --sub:#556575; --rule:#DCE3EA;
+  --accent:#F2B705; --ok:#1F8F55; --red:#B42318;
+  --font:"Inter",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+  color-scheme:light;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--paper);color:var(--ink);font:400 1rem/1.55 var(--font)}
+a{color:var(--navy)}
+.wrap{max-width:880px;margin:0 auto;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}
+
+header{background:var(--white);border-bottom:1px solid var(--rule)}
+header .wrap{display:flex;align-items:center;justify-content:space-between;gap:16px;padding-block:12px}
+.brand{display:flex;align-items:center;gap:12px;text-decoration:none;color:var(--navy)}
+.brand img{width:40px;height:auto;flex:none}
+.brand b{display:block;font-weight:700;font-size:1rem;letter-spacing:-.01em}
+.brand small{display:block;color:var(--sub);font-size:.78rem}
+.back{font-size:.88rem;font-weight:600;text-decoration:none;white-space:nowrap}
+
+.hero{padding:36px 0 8px}
+.eyebrow{font:600 .74rem/1.2 var(--font);letter-spacing:.14em;text-transform:uppercase;color:var(--sub);display:flex;align-items:center;gap:10px}
+.eyebrow::before{content:"";width:28px;height:3px;background:var(--accent)}
+h1{font-size:clamp(2rem,6vw,2.8rem);line-height:1.08;letter-spacing:-.025em;color:var(--navy);margin:14px 0 10px}
+.lead{font-size:1.08rem;color:var(--ink);margin:0 0 6px;max-width:60ch}
+
+.privacy-bar{margin:18px 0 0;padding:12px 14px;background:var(--white);border:1px solid var(--rule);border-radius:4px;font-size:.84rem;color:var(--sub);display:flex;gap:10px;align-items:flex-start}
+.privacy-bar svg{flex:none;margin-top:2px}
+
+.chooser{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px;margin:24px 0 8px}
+@media (max-width:820px){.chooser{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media (max-width:480px){.chooser{grid-template-columns:1fr}}
+.choice{display:flex;flex-direction:column;gap:6px;text-align:left;padding:18px 18px 16px;min-height:44px;background:var(--white);border:1.5px solid var(--rule);border-radius:4px;color:var(--navy);font:inherit;cursor:pointer;text-decoration:none}
+.choice:hover,.choice:focus-visible{border-color:var(--navy);box-shadow:inset 0 -4px 0 var(--accent)}
+.choice[aria-selected="true"]{border-color:var(--navy);box-shadow:inset 0 -4px 0 var(--accent)}
+.choice svg{width:30px;height:30px}
+.choice b{font-size:1.1rem;letter-spacing:-.01em}
+.choice span{font-size:.88rem;color:var(--sub)}
+
+
+
+
+details.priv{background:var(--white);border:1px solid var(--rule);border-radius:4px;padding:14px 18px;margin:16px 0 28px;font-size:.88rem;color:var(--ink)}
+details.priv summary{cursor:pointer;font-weight:600;color:var(--navy);min-height:24px}
+details.priv p{margin:10px 0 0}
+
+footer{background:var(--navy);color:#A9BBCC;font-size:.8rem}
+footer .wrap{padding-block:26px;display:flex;justify-content:space-between;align-items:center;gap:16px;flex-wrap:wrap}
+.fbrand{display:flex;align-items:center;gap:12px;color:#fff;font-weight:600}
+.fbrand img{width:34px;height:auto}
+footer a{color:#fff}
+.langsel{position:relative;display:inline-block}
+.lang-btn{display:inline-flex;align-items:center;gap:10px;font:600 .95rem var(--body);color:#fff;background:var(--navy);border:0;border-radius:999px;padding:10px 18px;cursor:pointer}
+.lang-btn .car{font-size:.8rem;opacity:.8}
+.lang-menu{position:absolute;z-index:20;top:calc(100% + 6px);inset-inline-start:0;min-width:240px;max-height:70vh;overflow:auto;margin:0;padding:6px;list-style:none;background:#fff;border:1px solid var(--rule);box-shadow:0 12px 32px rgba(14,42,71,.18);border-radius:10px}
+.lang-menu button{display:block;width:100%;text-align:start;font:500 1rem var(--body);color:var(--navy);background:none;border:0;border-radius:6px;padding:11px 14px;cursor:pointer}
+.lang-menu button:hover,.lang-menu button.on{background:#EEF2F5}.lang-menu button.on{font-weight:700}
+.langrow{margin-bottom:18px}
+.langsel{position:relative;display:inline-block}
+[dir=rtl] .hero,[dir=rtl] .chooser,[dir=rtl] .choice{text-align:right}
+@media (max-width:480px){.hero{padding-top:18px}h1{margin:10px 0 8px}.chooser{gap:10px;margin-top:18px}.choice{padding:14px 16px;flex-direction:row;flex-wrap:wrap;align-items:center;column-gap:12px;row-gap:2px}.choice svg{width:26px;height:26px}.choice span{flex-basis:100%;padding-inline-start:48px}}
+
+.choice{position:relative;border:1.5px solid #C9D3DD;border-inline-start:5px solid var(--accent);box-shadow:0 2px 0 #C9D3DD,0 6px 14px rgba(14,42,71,.08);padding-inline-end:52px!important;transition:transform .08s,box-shadow .08s}
+.choice::after{content:"";position:absolute;inset-inline-end:14px;top:50%;width:30px;height:30px;margin-top:-15px;border-radius:50%;background:var(--navy) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath d='M9 6l6 6-6 6' fill='none' stroke='%23fff' stroke-width='2.6' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E") center/18px no-repeat}
+[dir=rtl] .choice::after{transform:scaleX(-1)}
+.choice:active{transform:translateY(2px);box-shadow:0 0 0 #C9D3DD,0 2px 6px rgba(14,42,71,.08)}
+.choice svg{background:#EEF2F5;border-radius:50%;padding:5px;box-sizing:content-box}
+
+.lang-btn{background:#fff!important;color:var(--navy)!important;border:1.5px solid #C9D3DD!important;border-radius:8px!important;padding:6px 10px!important;gap:7px!important;font:600 .88rem var(--body,var(--font,Arial))!important;box-shadow:0 2px 0 #C9D3DD}
+.lang-btn .cur .fl,.lang-menu .fl{font-size:1.05em;letter-spacing:0;white-space:nowrap;flex:none}
+.lang-btn .car{display:inline-flex;opacity:1!important}
+.lang-btn .car svg{width:12px;height:12px}
+.lang-menu button{display:flex!important;align-items:center;gap:8px}
+
+.mobile-call{display:none}
+.mobile-call a.s112{flex:0 0 auto;background:#B3261E!important;color:#fff!important;border:0!important;padding:13px 16px}
+@media (max-width:860px){
+ .mobile-call{display:flex;position:fixed;left:0;right:0;bottom:0;z-index:6;gap:8px;background:#fff;padding:10px max(16px,env(safe-area-inset-right,0px)) calc(10px + env(safe-area-inset-bottom,0px)) max(16px,env(safe-area-inset-left,0px));border-top:1px solid var(--rule)}
+ .mobile-call a{flex:1;text-align:center;padding:13px;font-weight:600;text-decoration:none;background:var(--navy);color:#fff;border-radius:2px}
+ .mobile-call a+a{background:#fff;color:var(--navy);border:1.5px solid var(--navy)}
+ footer{padding-bottom:76px}
+}
+
+@media (max-width:480px){.choice{flex-wrap:nowrap!important;display:grid!important;grid-template-columns:auto 1fr;column-gap:12px;row-gap:2px;align-items:center}.choice svg{grid-row:1/3;align-self:start}.choice b{line-height:1.25}.choice span{padding-inline-start:0!important;grid-column:2}}
+
+.choice.game8{background:#F2B705;border-color:#C99600}.choice.game8 span{color:#0E2A47}.choice.game8 svg{background:#fff}
+@media (max-width:420px){header .wrap{gap:6px!important}header .brand{flex:1 1 auto!important;min-width:0}header .brand .wm{min-width:0}header .brand .wm b,header .brand .wm small{white-space:normal;overflow-wrap:anywhere}header .hbtn{font-size:.74rem!important;padding:8px 8px!important;max-width:42vw;white-space:normal!important;text-align:center;line-height:1.15}header .hwa{flex:none}}@media (max-width:380px){h1{font-size:2rem!important;overflow-wrap:break-word;hyphens:auto}.mobile-call a{min-width:0;padding:12px 6px!important;font-size:.86rem;overflow-wrap:anywhere}.mobile-call a.s112{padding:12px 10px!important}}</style>
+
+<meta property="og:type" content="article">
+<meta property="og:locale" content="it_IT">
+<meta property="og:site_name" content="Geom. Paolo Terenzi">
+<meta property="og:url" content="https://www.geometraterenzi.it/guide.html">
+<meta property="og:title" content="Guide alla sicurezza in cantiere per ruolo">
+<meta property="og:description" content="Guide pratiche alla sicurezza nei cantieri edili per committenti, imprese, dipendenti, preposti, lavoratori autonomi e direttori dei lavori. A cura del Geom. Paolo Terenzi, coordinatore per la sicurezza.">
+<meta property="og:image" content="https://www.geometraterenzi.it/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "CollectionPage", "@id": "https://www.geometraterenzi.it/guide.html#pagina", "url": "https://www.geometraterenzi.it/guide.html", "name": "Guide alla sicurezza in cantiere per ruolo", "description": "Guide pratiche alla sicurezza nei cantieri edili per committenti, imprese, dipendenti, preposti, lavoratori autonomi e direttori dei lavori. A cura del Geom. Paolo Terenzi, coordinatore per la sicurezza.", "inLanguage": "it-IT", "isPartOf": {"@id": "https://www.geometraterenzi.it/#website"}, "author": {"@id": "https://www.geometraterenzi.it/#paolo"}, "publisher": {"@id": "https://www.geometraterenzi.it/#studio"}, "dateModified": "2026-10-31", "about": "Sicurezza nei cantieri temporanei o mobili (D.Lgs. 81/2008)", "breadcrumb": {"@id": "https://www.geometraterenzi.it/guide.html#briciole"}, "mainEntity": {"@type": "ItemList", "itemListElement": [{"@type": "ListItem", "position": 1, "url": "https://www.geometraterenzi.it/committente.html", "name": "Committente"}, {"@type": "ListItem", "position": 2, "url": "https://www.geometraterenzi.it/imprese.html", "name": "Imprese"}, {"@type": "ListItem", "position": 3, "url": "https://www.geometraterenzi.it/dipendenti.html", "name": "Dipendenti"}, {"@type": "ListItem", "position": 4, "url": "https://www.geometraterenzi.it/preposti.html", "name": "Preposti"}, {"@type": "ListItem", "position": 5, "url": "https://www.geometraterenzi.it/autonomi.html", "name": "Lavoratori autonomi"}, {"@type": "ListItem", "position": 6, "url": "https://www.geometraterenzi.it/direzione.html", "name": "Direttore dei lavori"}, {"@type": "ListItem", "position": 7, "url": "https://www.geometraterenzi.it/gioco.html", "name": "Trova i 5 errori"}]}}, {"@type": "BreadcrumbList", "@id": "https://www.geometraterenzi.it/guide.html#briciole", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.geometraterenzi.it/"}, {"@type": "ListItem", "position": 2, "name": "Guide alla sicurezza", "item": "https://www.geometraterenzi.it/guide.html"}]}, {"@type": "Person", "@id": "https://www.geometraterenzi.it/#paolo", "name": "Paolo Terenzi", "honorificPrefix": "Geom.", "url": "https://www.geometraterenzi.it/", "sameAs": ["https://it.linkedin.com/in/paolo-terenzi-8a12671b6"]}]}</script>
+</head>
+<body>
+
+<header>
+  <div class="wrap">
+    <a class="brand" href="https://www.geometraterenzi.it/" aria-label="Geometra Paolo Terenzi, torna al sito"><svg width="40" height="33" viewBox="0 0 200 166" aria-hidden="true" style="flex:none"><path fill="#0E2A47" fill-rule="evenodd" d="M4 56 L99 4 L196 56 V163.5 H4 Z M15 62 L99 15.5 L185 62 V152.5 H15 Z M24 68 L98 28 L98 41 L24 81 Z M24 88 L98 48 L98 61 L24 101 Z M24 108 L98 68 L98 81 L24 121 Z M24 128 L98 88 L98 101 L24 141 Z M33.3 143 L98 108 L98 121 L57.3 143 Z M70.3 143 L98 128 L98 141 L94.4 143 Z M104 29 L117.6 36.3 V143 H104 Z M123 39.3 L137 46.8 V143 H123 Z M142 49.5 L156 57.1 V143 H142 Z M161.5 60 L174 66.8 V143 H161.5 Z"/></svg><span><b>Geometra Paolo Terenzi</b><small>Coordinamento sicurezza cantieri</small></span></a>
+    <a class="back" href="https://www.geometraterenzi.it/" >Vai al sito →</a>
+  </div>
+</header>
+<main class="wrap">
+  <div class="hero">
+    <div class="eyebrow">Sicurezza in cantiere</div>
+    <h1>Guide alla sicurezza per ruolo</h1>
+    <p class="lead">Cosa deve fare chi lavora o ha un ruolo in cantiere, spiegato in modo pratico secondo il D.Lgs. 81/08. Scegli il tuo ruolo.</p>
+  </div>
+  <nav class="chooser" aria-label="Scegli la tua pagina">
+    <a class="choice" href="https://www.geometraterenzi.it/committente.html" data-sez="committente">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round" aria-hidden="true"><path d="M3 11l9-7 9 7"/><path d="M5 10v10h14V10"/><path d="M10 20v-6h4v6"/></svg>
+      <b>Committente</b><span>Proprietario, condominio, ente: cosa devi fare</span>
+    </a>
+    <a class="choice" href="https://www.geometraterenzi.it/imprese.html" data-sez="imprese">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round" aria-hidden="true"><path d="M5 16v-2a7 7 0 0 1 14 0v2"/><path d="M10 7.3V12M14 7.3V12"/><path d="M2.5 16h19v2.5h-19z"/></svg>
+      <b>Ditte (datori di lavoro)</b><span>Documenti e regole per entrare</span>
+    </a>
+    <a class="choice" href="https://www.geometraterenzi.it/dipendenti.html" data-sez="dipendenti"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="8" r="3.2"/><path d="M8.5 6.5a3.6 3.6 0 0 1 7 0"/><path d="M7.5 6.6h9"/><path d="M5 20.5c.6-3.6 3.4-6 7-6s6.4 2.4 7 6"/></svg><b>Dipendenti</b><span>Lavori per una ditta: le tue regole e i tuoi diritti</span></a>
+    <a class="choice" href="https://www.geometraterenzi.it/preposti.html" data-sez="preposti"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="7" r="3.2"/><path d="M5.5 20.5c.6-3.8 3.2-6 6.5-6s5.9 2.2 6.5 6"/><path d="M9.5 3.6c.7-.4 1.6-.6 2.5-.6s1.8.2 2.5.6"/></svg><b>Preposti</b><span>Guidi la squadra: cosa devi controllare</span></a><a class="choice" href="https://www.geometraterenzi.it/autonomi.html" data-sez="autonomi"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round" stroke-linecap="round" aria-hidden="true"><path d="M14.5 6.5a4 4 0 0 0 5 5l-8 8a2.1 2.1 0 0 1-3-3l8-8a4 4 0 0 1-2-2z"/><path d="M14.5 6.5l2-2 3 3-2 2"/></svg><b>Lavoratori autonomi</b><span>Le regole per chi lavora in proprio</span></a>
+    <a class="choice" href="https://www.geometraterenzi.it/direzione.html" data-sez="direttore-lavori">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round" stroke-linecap="round" aria-hidden="true"><rect x="5" y="4" width="14" height="17" rx="1.5"/><path d="M9 4V2.8h6V4"/><path d="M8.8 12.5l2.2 2.2 4.2-4.4"/></svg>
+      <b>Direttore lavori</b><span>Coordinamento con il CSE</span>
+    </a>
+      <a class="choice game8" href="https://www.geometraterenzi.it/gioco.html?r=guide" data-sez="gioco"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round" stroke-linecap="round" aria-hidden="true"><rect x="3" y="7" width="18" height="11" rx="5"/><path d="M8 11v3M6.5 12.5h3"/><circle cx="15.5" cy="11.5" r="1"/><circle cx="17.5" cy="13.5" r="1"/></svg><b>Guardati intorno.</b><span>Il pericolo è sotto i tuoi occhi.</span></a>
+  </nav>
+  <p class="lead" style="margin-top:22px;font-size:.95rem">Hai bisogno di un coordinatore per la sicurezza nelle province di Rimini e Pesaro-Urbino? <a href="https://www.geometraterenzi.it/#contatti">Contattami</a>.</p>
+</main>
+
+<nav class="mobile-call" aria-label="Contatto rapido"><a href="#" data-h="tel">Chiama</a><a href="#" data-h="mail">Email</a></nav>
+
+<footer>
+  <div class="wrap">
+    <div class="fbrand"><svg width="34" height="28" viewBox="0 0 200 166" aria-hidden="true" style="flex:none"><path fill="#FFFFFF" fill-rule="evenodd" d="M4 56 L99 4 L196 56 V163.5 H4 Z M15 62 L99 15.5 L185 62 V152.5 H15 Z M24 68 L98 28 L98 41 L24 81 Z M24 88 L98 48 L98 61 L24 101 Z M24 108 L98 68 L98 81 L24 121 Z M24 128 L98 88 L98 101 L24 141 Z M33.3 143 L98 108 L98 121 L57.3 143 Z M70.3 143 L98 128 L98 141 L94.4 143 Z M104 29 L117.6 36.3 V143 H104 Z M123 39.3 L137 46.8 V143 H123 Z M142 49.5 L156 57.1 V143 H142 Z M161.5 60 L174 66.8 V143 H161.5 Z"/></svg><span>Geometra Paolo Terenzi</span></div>
+    <div>Albo Geometri e G.L. di Rimini n. 1877 · P.IVA 04491430403 · <a href="https://www.geometraterenzi.it/">Sito</a> · <a href="https://www.geometraterenzi.it/privacy.html">Privacy</a></div>
+  </div>
+</footer>
+
+<script>
+(function(){var K={"tel":"NDQ0NzE1NzkzMzkzKw==","mail":"dGkuaXpuZXJldGFydGVtb2VnQG9mbmk="};function d(k){try{return atob(K[k]).split('').reverse().join('')}catch(e){return''}}
+document.querySelectorAll('[data-c]').forEach(function(el){el.textContent=d(el.getAttribute('data-c'))});document.querySelectorAll('[data-h]').forEach(function(a){var t=a.getAttribute('data-h');a.href=t==='tel'?'tel:'+d('tel'):t==='mail'?'mailto:'+d('mail'):a.href});})();
+</script>
+</body>
+</html>
