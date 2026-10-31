@@ -412,15 +412,20 @@ nav a{white-space:nowrap}
   .walker .legb{animation:leg .45s ease-in-out infinite alternate-reverse}
   @keyframes leg{from{transform:rotate(-18deg)}to{transform:rotate(18deg)}}
 }
-.scene-vid{display:block;width:100%;height:auto;aspect-ratio:900/400;object-fit:cover;background:#0B1724}.scene-vid.mob{aspect-ratio:900/720}
-.game-cta{display:flex;flex-direction:column;align-items:flex-start;gap:2px;margin:22px 0 18px;padding:16px 22px;max-width:520px;background:#F2B705;color:#0E2A47;border-radius:10px;text-decoration:none;box-shadow:0 4px 0 #C99600,0 10px 26px rgba(242,183,5,.35);animation:gpulse 2.4s ease-in-out infinite;position:relative}
-.game-cta .gq{font-size:.85rem;font-weight:600;opacity:.85}.game-cta b{font-size:1.35rem;letter-spacing:-.01em}.game-cta .gs{font-size:.8rem;opacity:.75}
-.game-cta:hover{transform:translateY(-1px)}@keyframes gpulse{0%,100%{box-shadow:0 4px 0 #C99600,0 8px 20px rgba(242,183,5,.25)}50%{box-shadow:0 4px 0 #C99600,0 10px 34px rgba(242,183,5,.6)}}
+.scene-vid{display:block;width:100%;height:auto;aspect-ratio:900/400;object-fit:cover;background:#0B1724}.scene-vid.mob{aspect-ratio:900/600}
+
+.cta-wrap{display:inline-flex;flex-direction:column;align-items:stretch;max-width:100%}.cta-wrap .cta{flex-wrap:nowrap}.cta-wrap .cta .btn{flex:1 1 auto;text-align:center;justify-content:center}
+.game-cta{display:flex;align-items:center;gap:14px;margin-top:12px;padding:12px 12px 12px 14px;background:#F2B705;color:#0E2A47;border-radius:4px;text-decoration:none;animation:gpulse 2.4s ease-in-out infinite}
+.game-cta .gi{flex:none;width:44px;height:44px;border-radius:8px;background:#0E2A47;color:#F2B705;display:flex;align-items:center;justify-content:center}
+.game-cta .gt{display:flex;flex-direction:column;line-height:1.2;flex:1 1 auto}.game-cta .gt b{font-size:1.12rem}.game-cta .gq{font-size:.86rem;font-weight:500}
+.game-cta .gp{flex:none;background:#0E2A47;color:#fff;font-weight:700;font-size:.88rem;padding:10px 14px;border-radius:999px;white-space:nowrap}
+.game-cta .gpm{display:none}.game-cta:hover .gp{background:#1C3E63}@keyframes gpulse{0%,100%{box-shadow:0 0 0 0 rgba(242,183,5,0)}50%{box-shadow:0 0 0 6px rgba(242,183,5,.3)}}
 @media (prefers-reduced-motion:reduce){.game-cta{animation:none}}
+@media (max-width:600px){.cta-wrap{display:flex}.cta-wrap .cta{flex-wrap:wrap}.game-cta{flex-wrap:wrap;row-gap:10px}.game-cta .gp{flex:1 1 100%;text-align:center;padding:12px}.game-cta .gpm{display:inline}}
 .gov{position:fixed;inset:0;z-index:9999;background:rgba(10,19,29,.75);display:none;align-items:center;justify-content:center;padding:12px}.gov.on{display:flex}
 .gov .gbox{position:relative;width:100%;max-width:560px;height:100%;max-height:960px;background:#F5F7F9;border-radius:14px;overflow:hidden;box-shadow:0 20px 60px rgba(0,0,0,.5)}
 .gov .gbox{display:flex;flex-direction:column}.gov .gbar{display:flex;align-items:center;justify-content:space-between;gap:10px;padding:8px 10px 8px 16px;background:#0E2A47;color:#fff;font-weight:700;font-size:.95rem}.gov iframe{flex:1;width:100%;border:0;display:block}.gov .gx{border:0;border-radius:999px;padding:9px 14px;background:#F2B705;color:#0E2A47;font:700 .9rem inherit;cursor:pointer}
-@media (max-width:600px){.gov{padding:0}.gov .gbox{max-width:none;max-height:none;border-radius:0}.game-cta{margin:16px 0 14px;width:100%}}
+@media (max-width:600px){.gov{padding:0}.gov .gbox{max-width:none;max-height:none;border-radius:0}}
 </style>
 
 </head>
@@ -447,11 +452,10 @@ nav a{white-space:nowrap}
         
       </div>
       <div>
-        <p class="lead">Coordinatore della sicurezza nei cantieri edili, in fase di progettazione e di esecuzione. Redigo il piano di sicurezza del cantiere e seguo la sicurezza in cantiere fino alla fine dei lavori, per privati, condomini, imprese ed enti pubblici a Rimini, Riccione, Cattolica, Pesaro, Fano e in tutte le province di Rimini e Pesaro e Urbino.</p>
-        <div class="cta"><a class="btn p ic" href="#" data-h="tel"><svg class="wa-ico" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M6.6 10.8a15.2 15.2 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.25 11.4 11.4 0 0 0 3.6.57 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.45.57 3.57a1 1 0 0 1-.25 1z"/></svg>Chiama <span data-c="teltxt"></span></a><a class="btn wa ic" href="#" data-h="wa" target="_blank" rel="noopener"><svg class="wa-ico" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm0 18.2a8.2 8.2 0 0 1-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8s-.4-.1-.6.1-.7.8-.8 1-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.3-.4.3-.4.8-1.3.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2 5.2 5.2 0 0 0 1.1 2.8 11.9 11.9 0 0 0 4.6 4c1.7.7 2.4.8 3.2.7a2.8 2.8 0 0 0 1.8-1.3 2.3 2.3 0 0 0 .2-1.3c-.1-.1-.2-.2-.4-.3z"/></svg>WhatsApp</a></div>
+        <p class="lead">Coordinatore della sicurezza nei cantieri edili, in fase di progettazione e di esecuzione. Redigo il piano di sicurezza del cantiere e seguo la sicurezza in cantiere fino alla fine dei lavori, per privati, condomini, imprese ed enti pubblici nelle province di Rimini e Pesaro-Urbino.</p>
+        <div class="cta-wrap"><div class="cta"><a class="btn p ic" href="#" data-h="tel"><svg class="wa-ico" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M6.6 10.8a15.2 15.2 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.25 11.4 11.4 0 0 0 3.6.57 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.45.57 3.57a1 1 0 0 1-.25 1z"/></svg>Chiama <span data-c="teltxt"></span></a><a class="btn wa ic" href="#" data-h="wa" target="_blank" rel="noopener"><svg class="wa-ico" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm0 18.2a8.2 8.2 0 0 1-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8s-.4-.1-.6.1-.7.8-.8 1-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.3-.4.3-.4.8-1.3.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2 5.2 5.2 0 0 0 1.1 2.8 11.9 11.9 0 0 0 4.6 4c1.7.7 2.4.8 3.2.7a2.8 2.8 0 0 0 1.8-1.3 2.3 2.3 0 0 0 .2-1.3c-.1-.1-.2-.2-.4-.3z"/></svg>WhatsApp</a></div><a class="game-cta" id="gcta" href="/gioco.html?r=home"><span class="gi" aria-hidden="true"><svg viewBox="0 0 24 24" width="24" height="24"><path d="M12 3.2 2.6 19.6h18.8z" fill="#F2B705" stroke="#F2B705" stroke-width="1.6" stroke-linejoin="round"/><path d="M12 9.2v5" stroke="#0E2A47" stroke-width="2.3" stroke-linecap="round"/><circle cx="12" cy="17" r="1.25" fill="#0E2A47"/></svg></span><span class="gt"><b>Guardati intorno.</b><span class="gq">Il pericolo è sotto i tuoi occhi.</span></span><span class="gp">Mettiti alla prova<span class="gpm"> · 5 errori, 1 minuto</span> <span aria-hidden="true">→</span></span></a></div>
       </div>
     </div>
-    <a class="game-cta" id="gcta" href="/gioco.html?r=home"><span class="gq">Saresti stato attento?</span><b>Li trovi i 5 pericoli? <span aria-hidden="true">→</span></b><span class="gs">10 scene di cantiere · 1 minuto</span></a>
     <div class="scene">
 <video class="scene-svg scene-vid" id="cvid" autoplay muted loop playsinline preload="auto" poster="/img/cantiere-poster.jpg" data-m="/img/cantiere-m.mp4" data-mp="/img/cantiere-m-poster.jpg" data-d="/img/cantiere.mp4" aria-label="Cantiere: gru a torre con benna del calcestruzzo, escavatore che carica il camion, operai al lavoro"></video><script>(function(){var v=document.getElementById("cvid");if(!v)return;var m=matchMedia("(max-width:700px)").matches;if(m){v.poster=v.dataset.mp;v.classList.add("mob")}v.src=m?v.dataset.m:v.dataset.d;v.play&&v.play().catch(function(){})})();</script>
     </div>
