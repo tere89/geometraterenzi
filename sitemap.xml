@@ -2,18 +2,22 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://www.geometraterenzi.it/</loc>
-    <lastmod>2026-10-31</lastmod>
+    <lastmod>2026-11-01</lastmod>
   </url>
   <url>
     <loc>https://www.geometraterenzi.it/gioco.html</loc>
-    <lastmod>2026-10-31</lastmod>
+    <lastmod>2026-11-01</lastmod>
   </url>
   <url>
     <loc>https://www.geometraterenzi.it/guide.html</loc>
-    <lastmod>2026-10-31</lastmod>
+    <lastmod>2026-11-01</lastmod>
   </url>
   <url>
     <loc>https://www.geometraterenzi.it/committente.html</loc>
+    <lastmod>2026-10-31</lastmod>
+  </url>
+  <url>
+    <loc>https://www.geometraterenzi.it/condomino.html</loc>
     <lastmod>2026-10-31</lastmod>
   </url>
   <url>
@@ -35,5 +39,21 @@
   <url>
     <loc>https://www.geometraterenzi.it/direzione.html</loc>
     <lastmod>2026-10-31</lastmod>
+  </url>
+  <url>
+    <loc>https://www.geometraterenzi.it/enti-pubblici.html</loc>
+    <lastmod>2026-11-01</lastmod>
+  </url>
+  <url>
+    <loc>https://www.geometraterenzi.it/amministratori.html</loc>
+    <lastmod>2026-11-01</lastmod>
+  </url>
+  <url>
+    <loc>https://www.geometraterenzi.it/studi-tecnici.html</loc>
+    <lastmod>2026-11-01</lastmod>
+  </url>
+  <url>
+    <loc>https://www.geometraterenzi.it/linee-vita.html</loc>
+    <lastmod>2026-11-01</lastmod>
   </url>
 </urlset>
