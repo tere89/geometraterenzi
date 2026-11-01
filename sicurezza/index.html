@@ -165,7 +165,7 @@ footer a{color:#fff}
   // === CONFIGURAZIONE ===
   // Incolla qui l'indirizzo della "App web" di Fogli Google (vedi istruzioni)
   var REGISTRO_URL = "https://script.google.com/macros/s/AKfycbxC1kIeix5GfWHMQK-DpKJXM8dZPw_K_7UC3OPRHYWo2WS8tKU0QsqjIMUwnHoansv-1A/exec";
-  if (!/(^|\.)geometraterenzi\.it$/.test(location.hostname) || /[?&]test=1\b/.test(location.search)) REGISTRO_URL = "";
+  if (!/(^|\.)geometraterenzi\.it$/.test(location.hostname) || /[?&]test=1\b/.test(location.search) || (function(){try{var q=location.search;if(/[?&]noreg=1/.test(q))localStorage.setItem('gt-noreg','1');if(/[?&]noreg=0/.test(q))localStorage.removeItem('gt-noreg');return localStorage.getItem('gt-noreg')==='1'}catch(e){return false}})()) REGISTRO_URL = "";
   // ======================
 
   var visita = Math.random().toString(36).slice(2, 10);
